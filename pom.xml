@@ -145,6 +145,7 @@
 
   <build>
     <finalName>ssm-framework</finalName>
+      <!--将dao层的xml文件打包到项目中，如果xml文件没有存放在dao层，而是在resource路径下面，则不需要配置如下部分，因为项目在发布时，默认将resource中的内容发布到项目中-->
       <resources>
           <resource>
               <directory>src/main/java</directory>
