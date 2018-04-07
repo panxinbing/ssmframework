@@ -13,8 +13,8 @@
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>
-      /WEB-INF/spring/spring_config.xml,
-      /WEB-INF/spring/spring_mybatis_context.xml
+      classpath:/spring/spring_config.xml,
+      classpath:/spring/spring_mybatis_context.xml
     </param-value>
   </context-param>
   <!-- 编码过滤器 -->
@@ -52,7 +52,7 @@
     <init-param>
       <!-- ContextconfigLocation配置springmvc加载的配置文件适配器、处理映射器等 -->
       <param-name>contextConfigLocation</param-name>
-      <param-value>/WEB-INF/spring/spring_mvc_config.xml</param-value>
+      <param-value>classpath:spring/spring_mvc_config.xml</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
     <async-supported>true</async-supported>
